@@ -3,7 +3,7 @@ function carregar()  {
   let imageField = document.getElementById("img")
 
   let date = new Date()
-  let hour = date.getHours()
+  let hour = sdate.getHours()
   messageField.innerHTML = `Agora são ${hour} horas.`
 
   if(hour >= 0 && hour < 12) {
