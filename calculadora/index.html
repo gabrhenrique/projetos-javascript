@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/7378/7378257.png" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <section class="display">
+        <!-- Um campo de entrada de texto onde o resultado e as entradas são exibidos. -->
+        <!-- O atributo readonly inpede que o usuário edite manualmente o campo do visor (input) -->
+            <input type="text" id="displayContent" readonly>
+
+        </section>
+
+        <!-- Criando os botões da calculadora -->
+        <section class="buttons">
+            <div>
+                <button class="exta-one custom-style" onclick="calc.clearDisplay()">C</button>
+                <button class="custom-style">()</button>
+                <button class="exta-two custom-style">%</button>
+                <button class="exta-three custom-style" onclick="calc.appendToDisplay('/')">/</button>
+            </div>
+
+            <div>
+                <button class="num-color" onclick="calc.appendToDisplay('7')">7</button>
+                <button class="num-color" onclick="calc.appendToDisplay('8')">8</button>
+                <button class="num-color" onclick="calc.appendToDisplay('9')">9</button>
+                <button class="custom-style" onclick="calc.appendToDisplay('x')">x</button>
+            </div>
+
+            <div>
+                <button class="num-color" onclick="calc.appendToDisplay('4')">4</button>
+                <button class="num-color" onclick="calc.appendToDisplay('5')">5</button>
+                <button class="num-color" onclick="calc.appendToDisplay('6')">6</button>
+                <button class="exta-four custom-style" onclick="calc.appendToDisplay('-')">-</button>
+            </div>
+
+            <div>
+                <button class="num-color" onclick="calc.appendToDisplay('1')">1</button>
+                <button class="num-color" onclick="calc.appendToDisplay('2')">2</button>
+                <button class="num-color" onclick="calc.appendToDisplay('3')">3</button>
+                <button class="custom-style" onclick="calc.appendToDisplay('+')">+</button>
+            </div>
+
+            <div>
+                <button class="exta-six num-color">+/-</button>
+                <button class="num-color" onclick="calc.appendToDisplay('0')">0</button>
+                <button class="exta-five num-color" onclick="calc.appendToDisplay('.')">.</button>
+                <button class="custom-style" onclick="calc.calculate()">=</button>
+            </div>  
+        </section>
+    </main>
+
+    <!-- Aqui é a chamada para o arquivo JS -->
+    <script src="script.js"></script>
+</body>
+</html>
