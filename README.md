@@ -1,2 +1,2 @@
 # projetos-javascript
- Pequenos projetos de javascript
+ Projetos Javascript
